@@ -1,0 +1,117 @@
+/* 基本樣式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #fecdcd;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* 導覽列樣式 */
+.navbar-nav {
+    display: flex;
+    justify-content: space-evenly; /* 等距分佈 */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.nav-item {
+    flex: 3; /* 每個項目分配相等的空間 */
+    text-align: center; /* 確保內容居中 */
+}
+
+.nav-link {
+    display: block;
+    color: rgb(144, 76, 76);
+    text-align: center;
+    width: 100px;
+    padding: 0;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    background-color: #e3c3c3;
+    color: #000000;
+}
+
+/* 下拉選單樣式 */
+.container {
+    width: 200px;
+    margin: 0;
+}
+
+.dropdown-menu {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: rgb(144, 76, 76);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #e3c3c3;
+    color: #000000;
+}
+
+/* 主要區域樣式 */
+.container-1 {
+    max-width: 1200px; /* 調整整體寬度 */
+    margin: 20px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 每排固定 5 個 */
+    gap: 20px; /* 卡片之間的間距 */
+}
+.game-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 4px 4px rgba(250, 193, 193, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.game-card:hover {
+    transform: translateY(-5px);
+}
+.game-card img {
+    width: 100%; /* 改為填滿卡片 */
+    height: 150px;
+    object-fit: cover;
+}
+.game-title {
+    font-size: 16px;
+    padding: 10px 0;
+    color: #333;
+    background-color: #ffdddd;
+}
+.game-title a {
+    text-decoration: none;
+    color: #ff8e8e;
+}
+.game-title a:hover {
+    text-decoration: underline;
+}
