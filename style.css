@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #fecdcd;
+    background-color: #e6D6C8;
     color: white;
     padding: 15px;
     text-align: center;
@@ -49,7 +49,7 @@ h2 {
 }
 
 .nav-link:hover {
-    background-color: #e3c3c3;
+    background-color: #e6D6C8;
     color: #000000;
 }
 
@@ -115,7 +115,7 @@ h2 {
     max-width: 325px;
     padding: 20px;
     background-color: #fefeff;
-    border: 5px solid #b7b7b7;
+    border: 5px solid #e6D6C8;
     text-align: center;
 }
 .h-text {
@@ -131,6 +131,6 @@ h2 {
 .container3{
     margin: 0 auto;
     padding: 500px;
-    background-color: #fecdcd;
+    background-color: #e6D6C8;
     text-align: center;
 }

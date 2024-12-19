@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #fecdcd;
+    background-color: #e6D6C8;
     color: white;
     padding: 15px;
     text-align: center;
@@ -49,7 +49,7 @@ h2 {
 }
 
 .nav-link:hover {
-    background-color: #e3c3c3;
+    background-color: #e6D6C8;
     color: #000000;
 }
 
@@ -73,7 +73,7 @@ h2 {
 }
 
 .dropdown-item:hover {
-    background-color: #e3c3c3;
+    background-color: #e6D6C8;
     color: #000000;
 }
 
@@ -106,11 +106,11 @@ h2 {
     font-size: 16px;
     padding: 10px 0;
     color: #333;
-    background-color: #ffdddd;
+    background-color: #d4b498;
 }
 .game-title a {
     text-decoration: none;
-    color: #ff8e8e;
+    color: #ffffff;
 }
 .game-title a:hover {
     text-decoration: underline;
