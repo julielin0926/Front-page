@@ -86,10 +86,8 @@ h2 {
 }
 
 .hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    opacity: 0.5;
+    width: 1000px;
+    height: 600px;
 }
 
 .hero-text {
@@ -102,5 +100,37 @@ h2 {
     border-radius: 5px;
     font-size: 24px;
     color: #000;
+    text-align: center;
+}
+
+.container1 {
+    width: 300px; /* 設定寬度 */
+    padding: 20px; /* 內距 */
+    background-color: #fefeff; /* 背景色 (淺灰色) */
+
+}
+
+.container2 {
+    margin: 0 auto;
+    max-width: 325px;
+    padding: 20px;
+    background-color: #fefeff;
+    border: 5px solid #b7b7b7;
+    text-align: center;
+}
+.h-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.p-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container3{
+    margin: 0 auto;
+    padding: 500px;
+    background-color: #fecdcd;
     text-align: center;
 }
