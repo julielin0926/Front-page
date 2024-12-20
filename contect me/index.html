@@ -69,18 +69,18 @@
             </div>
         </div>
         <div class="col-md-4" id="comment">
-            <form action="/action_page.php">
+            <form action="/submit-comment" method="POST">
                 <div class="mb-3">
                     <p id="p-comment">作品評論區</p>
-                    <label for="">作品名稱:</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
-                  </div>
+                    <label for="name">作品名稱:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                </div>
                 <div class="mb-3">
-                  <label for="comment">評論:</label>
-                  <input type="text" class="form-control" id="message" placeholder="Enter message" name="message">
+                    <label for="message">評論:</label>
+                    <textarea class="form-control" id="message" placeholder="Enter message" name="message" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">送出</button>
-              </form>
+            </form>
         </div>
     </main>
     <main id="main2"> 
