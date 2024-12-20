@@ -32,7 +32,7 @@
                 </li>
             </div>
             <li class="nav-item">
-                <a class="nav-link" href="./index.html">關於我</a>
+                <a class="nav-link" href="../about me/index.html">關於我</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">聯繫資訊</a>
@@ -41,29 +41,47 @@
     </nav>
 
     <main>
-        <div class="container" id="h">
-            <h3>«« 聯繫資訊 »»</h3>
-            <p>若對我的作品集感興趣，歡迎聯繫我看更多.ᐟ.ᐟ.ᐟ</p>
-        </div>
-        <div class="container" id="email">
-            <div class="row">
-              <div class="col-sm-4" id="col-img">
-                <img src="email.png"><br>
-              </div>
-              <div class="col-sm-8" id="col-text">
-                <p>julielin92926@gmail.com<br></p>
-              </div>
+    <div class="container" id="container"></div>
+    <div class="row" id="big">
+        <div class="col-md-8" id="artical">  
+            <div class="container" id="H">
+                <h3>«« 聯繫資訊 »»</h3>
+                <p id="h">若對我的作品集感興趣，歡迎聯繫我看更多.ᐟ.ᐟ.ᐟ</p>
             </div>
-
-            <div class="row">
+            <div class="container" id="email">
+                <div class="row">
                 <div class="col-sm-4" id="col-img">
-                  <img src="ig.png"><br>
+                    <img src="email.png"><br>
                 </div>
                 <div class="col-sm-8" id="col-text">
-                  <a href="https://www.instagram.com/zylin0926_my_portfolio/?hl=zh-tw" id="ig">zylin0926_my_portfolio</a>
+                    <p>julielin92926@gmail.com<br></p>
                 </div>
-              </div>
-          </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4" id="col-img">
+                    <img src="ig.png"><br>
+                    </div>
+                    <div class="col-sm-8" id="col-text">
+                    <a href="https://www.instagram.com/zylin0926_my_portfolio/?hl=zh-tw" id="ig">zylin0926_my_portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" id="comment">
+            <form action="/action_page.php">
+                <div class="mb-3">
+                    <p id="p-comment">作品評論區</p>
+                    <label for="">作品名稱:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                  </div>
+                <div class="mb-3">
+                  <label for="comment">評論:</label>
+                  <input type="text" class="form-control" id="message" placeholder="Enter message" name="message">
+                </div>
+                <button type="submit" class="btn btn-primary">送出</button>
+              </form>
+        </div>
     </main>
     <main id="main2"> 
         <div class="container" id="container"></div>

@@ -72,11 +72,50 @@ h1 {
     color: #000000;
 }
 
-#h{
+/*內文*/
+#big{
+    position: relative;
+    left: 10;
+    width: 1000px;
+    margin: 0; /* 清除外邊距 */
+}
+
+#artical{
+    position: relative;
+    left: 70px;
+    text-align: center;
+    color: #4f4f4f;
+}
+
+#comment{ 
+    text-align: left;
+    background-color: #e6D6C8;
+    border-radius: 10px;
+    color: #4f4f4f;
+}
+
+#H{
+    position: relative;
+    left: 13px;
+    color: #4f4f4f;
     width: 400px; /* 設定寬度 */
     padding: 10px;
     background-color: #ffffff;
     text-align: center;
+}
+
+#h{
+    color: #4f4f4f;
+    font-weight: bold;
+    text-align: center;
+}
+
+#p-comment{
+    position: relative;
+    top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4f4f4f;
 }
 
 .h3{
@@ -98,12 +137,12 @@ h1 {
 #col-text{
     padding: 6px;
     font-size: 18px;
-    color: #000000;
+    color: #4f4f4f;
 }
 
 #ig{
     text-align: left;
-    color: #000000;
+    color: #4f4f4f;
     text-decoration: none;
 }
 
