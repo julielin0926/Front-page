@@ -1,8 +1,9 @@
+/* 基本樣式 */
 body {
-    min-height: 100vh;
-    overflow-x: hidden;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
 }
 
 header {
@@ -15,11 +16,6 @@ header {
 h1 {
     margin: 0;
     font-size: 50px;
-}
-
-h2 {
-    margin: 0;
-    font-size: 16px;
 }
 
 /* 導覽列樣式 */
@@ -76,33 +72,39 @@ h2 {
     color: #000000;
 }
 
-/* 響應式調整 */
-#main1{
-    position: relative;
-    top: 85px;
-}
-.mb-3 {
-    font-size: 30px;
-    line-height: 1.6;
-    color: #555;
+#h{
+    width: 400px; /* 設定寬度 */
+    padding: 10px;
+    background-color: #ffffff;
+    text-align: center;
 }
 
-.a {
-    position: relative;
-    font-size: 20px;
-    line-height: 1.6;
-    color: #555;
+.h3{
+    font-size: 15px;
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+#email{
+    width: 400px; /* 設定寬度 */
+    padding: 10px;
+    background-color: #ffffff;
 }
 
-#main2{
-    position: relative;
-    top: 85px;
+#col-img{
+    text-align: right;
+    display: block;
+    margin: 0;
+}
+
+#col-text{
+    padding: 6px;
+    font-size: 18px;
+    color: #000000;
+}
+
+#ig{
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
 }
 
 #container{
@@ -123,32 +125,4 @@ h2 {
     font-size: 14px;
     font-family: Arial, sans-serif;
     text-align: center;
-}
-
-/* 滾動視差 */
-.parallax{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 130vh;
-    background: url('background.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-#text{
-    position: absolute;
-    font-size: 80px;
-    color: #e3ba96;
-    text-shadow: 2px 4px 5px #ffffff;
-}
-
-.parallax img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    pointer-events: none;
 }

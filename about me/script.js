@@ -9,8 +9,8 @@ window.addEventListener('scroll', () => {
     let value = window.scrollY;
     treeLeft.style.left = value * -1.5 + 'px';
     treeRight.style.left = value * 1.5 + 'px';
-    cloudLeft.style.left = value * -2 + 'px';
-    cloudRight.style.left = value * 2 + 'px';
+    cloudLeft.style.left = value * -4 + 'px';
+    cloudRight.style.left = value * 4 + 'px';
     groundLeft.style.left = value * -0.5 + 'px';
     groundRight.style.left = value * 0.5 + 'px';
 })
