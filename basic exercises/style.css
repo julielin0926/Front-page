@@ -79,6 +79,13 @@ h2 {
 }
 
 /* 主要區域樣式 */
+.carousel-indicators{
+    width: 200px;
+}
+
+.carousel-control-prev-icon{
+    width: 200px;
+}
 
 /* 唯讀區域樣式 */
 #container {
