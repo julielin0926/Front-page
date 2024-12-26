@@ -115,3 +115,24 @@ h2 {
 .game-title a:hover {
     text-decoration: underline;
 }
+
+/* 唯讀區域樣式 */
+#container {
+    width: 200px; /* 設定寬度 */
+    padding: 20px; /* 內距 */
+    background-color: #ffffff;
+}
+
+#container1 {
+    padding: 70px; /* 內距 */
+    background-color: #e6D6C8;
+}
+
+#only {
+    position: relative;
+    top: 50px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
