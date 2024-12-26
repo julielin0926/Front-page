@@ -18,6 +18,11 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
 /* 導覽列樣式 */
 .navbar-nav {
     display: flex;
@@ -72,93 +77,45 @@ h1 {
     color: #000000;
 }
 
-/*內文*/
-#big{
-    position: relative;
-    left: 10;
-    width: 1000px;
-    margin: 0; /* 清除外邊距 */
+/* 主要區域樣式 */
+iframe {
+    border: none; /* 去掉影片框線 */
+    border-radius: 8px; /* 增加影片的圓角效果 */
 }
 
-#artical{
-    position: relative;
-    left: 70px;
-    text-align: center;
-    color: #4f4f4f;
-}
-
-#comment{ 
+#main1 h3 {
     text-align: left;
-    background-color: #e6D6C8;
-    border-radius: 10px;
-    color: #4f4f4f;
-}
-
-#H{
-    position: relative;
-    left: 13px;
-    color: #4f4f4f;
-    width: 400px; /* 設定寬度 */
-    padding: 10px;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-#h{
-    color: #4f4f4f;
     font-weight: bold;
-    text-align: center;
+    margin-bottom: 10px;
 }
 
-#p-comment{
-    position: relative;
-    top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #4f4f4f;
-}
-
-.h3{
-    font-size: 15px;
-}
-
-#email{
-    width: 400px; /* 設定寬度 */
-    padding: 10px;
+#main1 .container {
     background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
 }
 
-#col-img{
-    text-align: right;
+#main1 iframe {
+    width: 100%;
+    max-width: 600px; /* 限制影片最大寬度 */
+    aspect-ratio: 4 / 3; /* 保持 4:3 比例 */
+    margin: 0; /* 移除 margin，使影片靠左 */
     display: block;
-    margin: 0;
-}
-
-#col-text{
-    padding: 6px;
-    font-size: 18px;
-    color: #4f4f4f;
-}
-
-#ig{
-    text-align: left;
-    color: #4f4f4f;
-    text-decoration: none;
 }
 
 /* 唯讀區域樣式 */
-#container{
+#container {
     width: 200px; /* 設定寬度 */
     padding: 20px; /* 內距 */
     background-color: #ffffff;
 }
 
-#container1{
+#container1 {
     padding: 70px; /* 內距 */
     background-color: #e6D6C8;
 }
 
-#only{
+#only {
     position: relative;
     top: 50px;
     color: #ffffff;
