@@ -79,6 +79,13 @@ h2 {
 }
 
 /* 主要區域樣式 */
+#main1 iframe {
+    width: 100%;
+    max-width: 600px; /* 限制影片最大寬度 */
+    aspect-ratio: 4 / 3; /* 保持 4:3 比例 */
+    margin: 0; /* 移除 margin，使影片靠左 */
+    display: block;
+}
 
 /* 唯讀區域樣式 */
 #container {
