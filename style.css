@@ -8,14 +8,15 @@ body {
 
 header {
     background-color: #e6D6C8;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 15px;
     text-align: center;
 }
 
 h1 {
     margin: 0;
-    font-size: 50px;
+    font-size: 60px;
+    text-shadow: 2px 2px rgb(81, 81, 81);
 }
 
 h2 {
@@ -128,9 +129,23 @@ h2 {
     line-height: 1.5;
 }
 
-.container3{
-    margin: 0 auto;
-    padding: 500px;
+/* 唯讀區域樣式 */
+#container {
+    width: 200px; /* 設定寬度 */
+    padding: 20px; /* 內距 */
+    background-color: #ffffff;
+}
+
+#container1 {
+    padding: 70px; /* 內距 */
     background-color: #e6D6C8;
+}
+
+#only {
+    position: relative;
+    top: 50px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
