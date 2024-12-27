@@ -79,58 +79,70 @@ h2 {
 }
 
 /* 主要區域樣式 */
-.carousel-inner {
+.carousel-inner1 {
     display: flex;
     justify-content: left;
     align-items: left;
 }
-
-.carousel-item img {
-    max-width: 50%;
-    height: auto;
-    margin: 0 ; /* 圖片居中 */
-}
-
-#carousel1 .carousel-indicators {
+.carousel-indicators1 {
     position: absolute;
-    bottom: 10px; /* 與圖片底部的距離 */
+    bottom: -10px; /* 與圖片底部的距離 */
     left: 50%;
-    transform: translateX(-40%); /* 水平居中 */
+    transform: translateX(-123%); /* 水平居中 */
     display: flex;
     justify-content: right;
+    color: #000000;
     gap: 0.5rem; /* 指示器間距 */
     width: 100%; /* 撐滿圖片寬度 */
 }
 
-#carousel2 .carousel-indicators {
+.carousel-inner2 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.carousel-indicators2 {
     position: absolute;
-    bottom: 10px; /* 與圖片底部的距離 */
+    bottom: -10px; /* 與圖片底部的距離 */
     left: 50%;
-    transform: translateX(-40%); /* 水平居中 */
+    transform: translateX(-119%); /* 水平居中 */
     display: flex;
     justify-content: right;
+    color: #000000;
     gap: 0.5rem; /* 指示器間距 */
     width: 100%; /* 撐滿圖片寬度 */
 }
 
-#carousel3 .carousel-indicators {
+.carousel-inner3 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.carousel-indicators3 {
     position: absolute;
-    bottom: 10px; /* 與圖片底部的距離 */
+    bottom: -10px; /* 與圖片底部的距離 */
     left: 50%;
-    transform: translateX(-40%); /* 水平居中 */
+    transform: translateX(-123%); /* 水平居中 */
     display: flex;
     justify-content: right;
+    color: #000000;
     gap: 0.5rem; /* 指示器間距 */
     width: 100%; /* 撐滿圖片寬度 */
 }
 
-#carousel4 .carousel-indicators {
+.carousel-inner4 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.carousel-indicators4 {
     position: absolute;
-    bottom: 10px; /* 與圖片底部的距離 */
+    bottom: -10px; /* 與圖片底部的距離 */
     left: 50%;
-    transform: translateX(-40%); /* 水平居中 */
+    transform: translateX(-123%); /* 水平居中 */
     display: flex;
     justify-content: right;
+    color: #000000;
     gap: 0.5rem; /* 指示器間距 */
     width: 100%; /* 撐滿圖片寬度 */
 }
