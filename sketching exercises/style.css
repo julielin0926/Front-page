@@ -79,6 +79,65 @@ h2 {
 }
 
 /* 主要區域樣式 */
+.carousel-inner {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.carousel-item img {
+    max-width: 50%;
+    height: auto;
+    margin: 0 ; /* 圖片居中 */
+}
+
+#carousel1 .carousel-indicators {
+    position: absolute;
+    bottom: 10px; /* 與圖片底部的距離 */
+    left: 50%;
+    transform: translateX(-40%); /* 水平居中 */
+    display: flex;
+    justify-content: right;
+    gap: 0.5rem; /* 指示器間距 */
+    width: 100%; /* 撐滿圖片寬度 */
+}
+
+#carousel2 .carousel-indicators {
+    position: absolute;
+    bottom: 10px; /* 與圖片底部的距離 */
+    left: 50%;
+    transform: translateX(-40%); /* 水平居中 */
+    display: flex;
+    justify-content: right;
+    gap: 0.5rem; /* 指示器間距 */
+    width: 100%; /* 撐滿圖片寬度 */
+}
+
+#carousel3 .carousel-indicators {
+    position: absolute;
+    bottom: 10px; /* 與圖片底部的距離 */
+    left: 50%;
+    transform: translateX(-40%); /* 水平居中 */
+    display: flex;
+    justify-content: right;
+    gap: 0.5rem; /* 指示器間距 */
+    width: 100%; /* 撐滿圖片寬度 */
+}
+
+#carousel4 .carousel-indicators {
+    position: absolute;
+    bottom: 10px; /* 與圖片底部的距離 */
+    left: 50%;
+    transform: translateX(-40%); /* 水平居中 */
+    display: flex;
+    justify-content: right;
+    gap: 0.5rem; /* 指示器間距 */
+    width: 100%; /* 撐滿圖片寬度 */
+}
+
+.d-block{
+    width: 50%;
+}
 
 /* 唯讀區域樣式 */
 #container {
