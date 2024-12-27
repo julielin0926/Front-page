@@ -80,13 +80,14 @@ h2 {
 
 /* 主要區域樣式 */
 .container-1 {
-    max-width: 1200px; /* 調整整體寬度 */
-    margin: 20px auto;
-    padding: 0 20px;
+    max-width: 1200px; /* 限制容器最大寬度 */
+    margin: 20px auto; /* 垂直和水平置中 */
+    padding: 0 20px; /* 增加左右內距 */
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 每排固定 5 個 */
     gap: 20px; /* 卡片之間的間距 */
 }
+
 .game-card {
     background-color: white;
     border-radius: 8px;
@@ -94,28 +95,36 @@ h2 {
     overflow: hidden;
     text-align: center;
     transition: transform 0.2s;
+    display: flex; /* 使內容垂直居中 */
+    flex-direction: column;
 }
+
 .game-card:hover {
     transform: translateY(-5px);
 }
+
 .game-card img {
-    width: 100%; /* 改為填滿卡片 */
-    height: 150px;
-    object-fit: cover;
+    width: 100%; /* 圖片寬度自適應 */
+    height: auto; /* 保持圖片比例 */
+    object-fit: cover; /* 裁剪圖片超出部分 */
 }
+
 .game-title {
     font-size: 16px;
     padding: 10px 0;
     color: #333;
     background-color: #d4b498;
 }
+
 .game-title a {
     text-decoration: none;
     color: #ffffff;
 }
+
 .game-title a:hover {
     text-decoration: underline;
 }
+
 
 /* 唯讀區域樣式 */
 #container {
