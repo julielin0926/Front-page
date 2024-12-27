@@ -79,6 +79,23 @@ h2 {
 }
 
 /* 主要區域樣式 */
+iframe {
+    border: none; /* 去掉影片框線 */
+    border-radius: 8px; /* 增加影片的圓角效果 */
+}
+
+#main1 h3 {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#main1 .container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
 #main1 iframe {
     width: 100%;
     max-width: 600px; /* 限制影片最大寬度 */
