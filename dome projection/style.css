@@ -98,9 +98,8 @@ iframe {
 }
 
 #main1 iframe {
-    height: 360px;
-    width: 640px;
-    aspect-ratio: 16 / 9; /* 保持 16:9 比例 */
+    width: 100%;
+    max-width: 600px; /* 限制影片最大寬度 */
     margin: 0; /* 移除 margin，使影片靠左 */
     display: block;
 }
