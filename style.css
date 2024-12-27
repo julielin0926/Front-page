@@ -86,9 +86,17 @@ h2 {
     margin: 0 auto;
 }
 
-.hero-image {
-    width: 1000px;
-    height: 600px;
+.hero-img {
+    display: flex; /* 使用彈性盒模型 */
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    width: 100%; /* 確保圖片容器佔滿寬度 */
+}
+
+.hero-img img {
+    max-width: 100%; /* 確保圖片不超過容器寬度 */
+    height: auto; /* 等比例縮放圖片 */
+    object-fit: contain; /* 保持圖片完整顯示（不裁切） */
 }
 
 .hero-text {
