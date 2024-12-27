@@ -79,12 +79,27 @@ h2 {
 }
 
 /* 主要區域樣式 */
-.carousel-indicators{
-    width: 200px;
+.carousel-inner {
+    display: flex;
+    justify-content: left;
+    align-items: left;
 }
 
-.carousel-control-prev-icon{
-    width: 200px;
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 ; /* 圖片居中 */
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px; /* 與圖片底部的距離 */
+    left: 50%;
+    transform: translateX(-40%); /* 水平居中 */
+    display: flex;
+    justify-content: right;
+    gap: 0.5rem; /* 指示器間距 */
+    width: 100%; /* 撐滿圖片寬度 */
 }
 
 /* 唯讀區域樣式 */
