@@ -79,6 +79,14 @@ h2 {
 }
 
 /* 主要區域樣式 */
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 100vh;
+    background-color: #323030;
+}
 .carousel-inner1 {
     display: flex;
     justify-content: left;
