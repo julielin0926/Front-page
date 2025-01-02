@@ -79,78 +79,25 @@ h2 {
 }
 
 /* 主要區域樣式 */
-#box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vh;
-    height: 100vh;
-    background-color: #323030;
-}
-.carousel-inner1 {
+.carousel-inner {
     display: flex;
     justify-content: left;
     align-items: left;
-}
-.carousel-indicators1 {
-    position: absolute;
-    bottom: -10px; /* 與圖片底部的距離 */
-    left: 50%;
-    transform: translateX(-123%); /* 水平居中 */
-    display: flex;
-    justify-content: right;
-    color: #000000;
-    gap: 0.5rem; /* 指示器間距 */
-    width: 100%; /* 撐滿圖片寬度 */
 }
 
-.carousel-inner2 {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-}
-.carousel-indicators2 {
-    position: absolute;
-    bottom: -10px; /* 與圖片底部的距離 */
-    left: 50%;
-    transform: translateX(-119%); /* 水平居中 */
-    display: flex;
-    justify-content: right;
-    color: #000000;
-    gap: 0.5rem; /* 指示器間距 */
-    width: 100%; /* 撐滿圖片寬度 */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 ; /* 圖片居中 */
 }
 
-.carousel-inner3 {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-}
-.carousel-indicators3 {
+.carousel-indicators {
     position: absolute;
-    bottom: -10px; /* 與圖片底部的距離 */
+    bottom: 10px; /* 與圖片底部的距離 */
     left: 50%;
-    transform: translateX(-123%); /* 水平居中 */
+    transform: translateX(-40%); /* 水平居中 */
     display: flex;
     justify-content: right;
-    color: #000000;
-    gap: 0.5rem; /* 指示器間距 */
-    width: 100%; /* 撐滿圖片寬度 */
-}
-
-.carousel-inner4 {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-}
-.carousel-indicators4 {
-    position: absolute;
-    bottom: -10px; /* 與圖片底部的距離 */
-    left: 50%;
-    transform: translateX(-123%); /* 水平居中 */
-    display: flex;
-    justify-content: right;
-    color: #000000;
     gap: 0.5rem; /* 指示器間距 */
     width: 100%; /* 撐滿圖片寬度 */
 }

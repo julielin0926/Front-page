@@ -1,43 +1,44 @@
-//install: node js
-//install web server package: express >npm install express
-var express = require("express");
-var server = express();
-var bodyParser = require("body-parser");
+const express = require("express");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
 
-//web root
-server.use(express.static(__dirname+'/contact_me'));
-server.use(bodyParser.json());
-server.use(bodyParser.urlencoded());
+const app = express();
+const port = 3000;
 
-var fileUpload = require("express-fileupload");
-server.use(fileUpload({defCharset:'utf8', defParamCharset:'utf8'}));
+// 解析表單資料
+app.use(bodyParser.urlencoded({ extended: true }));
 
+// 設定靜態檔案路徑
+app.use(express.static("Front-page"));
 
-var DB = require("nedb-promises");
-var commentDB = DB.create(__dirname+"/comment.db");
+// 連接 MongoDB
+mongoose.connect("mongodb://localhost:27017/commentDB", { useNewUrlParser: true, useUnifiedTopology: true });
 
-server.get("/services", (req, res)=>{
-    //DB find
-    var Services=[
-        {icon: "fa-shopping-cart", heading:"E-Commerce", text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."},
-        {icon: "fa-laptop", heading:"Responsive Design", text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."}
-    ];
-    res.send(Services);
+// 建立資料庫 Schema 和 Model
+const commentSchema = new mongoose.Schema({
+    name: String,
+    message: String,
+});
+const Comment = mongoose.model("Comment", commentSchema);
+
+// 處理表單提交
+app.post("/contact_me", (req, res) => {
+    const newComment = new Comment({
+        name: req.body.name,
+        message: req.body.message,
+    });
+
+    // 儲存到資料庫
+    newComment.save((err) => {
+        if (!err) {
+            res.send("評論已成功提交！");
+        } else {
+            res.status(500).send("發生錯誤，無法儲存評論！");
+        }
+    });
 });
 
-server.post("/contact_me", (req, res) => {
-    // 插入資料到 commentDB
-    commentDB.insert(req.body)
-        .then(() => {
-            console.log("評論已儲存：", req.body);
-            res.redirect("/#comment"); // 成功後重新導向
-        })
-        .catch((err) => {
-            console.error("儲存評論時發生錯誤：", err);
-            res.status(500).send("儲存評論時發生錯誤！");
-        });
+// 啟動伺服器
+app.listen(port, () => {
+    console.log(`伺服器已啟動，訪問 http://localhost:${port}`);
 });
-
-server.listen(80, ()=>{
-    console.log("Server is running at port 80.");
-})
