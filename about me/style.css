@@ -101,6 +101,7 @@ h2 {
     border-radius: 10px;
 }
 
+/* 唯讀區域樣式 */
 #main2{
     position: relative;
     top: 85px;

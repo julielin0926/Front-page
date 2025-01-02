@@ -1,9 +1,8 @@
-/* 基本樣式 */
 body {
-    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
 }
 
 header {
@@ -17,6 +16,11 @@ h1 {
     margin: 0;
     font-size: 60px;
     text-shadow: 2px 2px rgb(81, 81, 81);
+}
+
+h2 {
+    margin: 0;
+    font-size: 16px;
 }
 
 /* 導覽列樣式 */
@@ -75,33 +79,22 @@ h1 {
 
 /*內文*/
 #big{
-    position: relative;
-    left: 10;
-    width: 1000px;
-    margin: 0; /* 清除外邊距 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1280px;
 }
 
 #artical{
-    position: relative;
-    left: 70px;
+    max-width: 500px;
     text-align: center;
     color: #4f4f4f;
 }
 
-#comment{ 
-    text-align: left;
-    background-color: #e6D6C8;
-    border-radius: 10px;
-    color: #4f4f4f;
-}
-
 #H{
-    position: relative;
-    left: 13px;
-    color: #4f4f4f;
-    width: 400px; /* 設定寬度 */
+    max-width: 500px; /* 設定寬度 */
     padding: 10px;
-    background-color: #ffffff;
+    color: #4f4f4f;
     text-align: center;
 }
 
@@ -109,11 +102,48 @@ h1 {
     color: #4f4f4f;
     font-weight: bold;
     text-align: center;
+    margin: 0;
+}
+
+#email{
+    max-width: 500px; /* 設定寬度 */
+    padding: 10px;
+    color: #4f4f4f;
+    text-align: center;
+}
+
+#aaa{
+    padding-right: 50px;
+    padding-left: 50px;
+    max-width: 400px;
+}
+
+#col-img{
+    max-width: 100px;
+    padding-bottom: 6px;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+}
+
+#col-text{
+    max-width: 200px;
+    padding: 6px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    color: #4f4f4f;
+}
+
+#comment{ 
+    max-width: 500px;
+    text-align: left;
+    background-color: #e6D6C8;
+    border-radius: 10px;
+    color: #4f4f4f;
 }
 
 #p-comment{
-    position: relative;
-    top: 10px;
     font-size: 18px;
     font-weight: bold;
     color: #4f4f4f;
@@ -121,24 +151,6 @@ h1 {
 
 .h3{
     font-size: 15px;
-}
-
-#email{
-    width: 400px; /* 設定寬度 */
-    padding: 10px;
-    background-color: #ffffff;
-}
-
-#col-img{
-    text-align: right;
-    display: block;
-    margin: 0;
-}
-
-#col-text{
-    padding: 6px;
-    font-size: 18px;
-    color: #4f4f4f;
 }
 
 #ig{
