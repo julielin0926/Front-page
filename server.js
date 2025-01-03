@@ -40,5 +40,5 @@ server.post("/contact_me", (req, res) => {
 
 // 啟動伺服器
 server.listen(8000, () => {
-    console.log("伺服器正在執行，監聽 Port 80...");
+    console.log("伺服器正在執行，監聽 Port 8000...");
 });
