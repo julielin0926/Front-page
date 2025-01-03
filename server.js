@@ -38,17 +38,6 @@ server.post("/contact_me", (req, res) => {
         });
 });
 
-server.get("/comments", (req, res) => {
-    commentDB.find({}) // 從資料庫中查詢所有資料
-        .then(comments => {
-            res.json(comments); // 回傳 JSON 格式的資料
-        })
-        .catch(err => {
-            console.error("查詢失敗:", err);
-            res.status(500).send("查詢失敗！");
-        });
-});
-
 // 啟動伺服器
 server.listen(80, () => {
     console.log("伺服器正在執行，監聽 Port 80...");
