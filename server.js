@@ -7,7 +7,7 @@ var DB = require("nedb-promises");
 var server = express();
 
 //web root
-server.use(express.static(__dirname+"/contact_me"));
+server.use(express.static(__dirname+"/my portfolio"));
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded());
 
@@ -30,7 +30,7 @@ server.post("/contact_me", (req, res) => {
     commentDB.insert(comment)
         .then(() => {
             console.log("成功儲存評論:", comment);
-            res.redirect("/index.html"); // 導回主頁（或其他頁面）
+            res.redirect("/contact_me"); // 導回主頁（或其他頁面）
         })
         .catch(err => {
             console.error("儲存失敗:", err);
@@ -39,6 +39,6 @@ server.post("/contact_me", (req, res) => {
 });
 
 // 啟動伺服器
-server.listen(80, () => {
+server.listen(8000, () => {
     console.log("伺服器正在執行，監聽 Port 80...");
 });
