@@ -1,44 +1,55 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const mongoose = require("mongoose");
+// 引入模組
+var express = require("express");
+var bodyParser = require("body-parser");
+var DB = require("nedb-promises");
 
-const app = express();
-const port = 3000;
+// 建立伺服器
+var server = express();
 
-// 解析表單資料
-app.use(bodyParser.urlencoded({ extended: true }));
+//web root
+server.use(express.static(__dirname+"/contact_me"));
+server.use(bodyParser.json());
+server.use(bodyParser.urlencoded());
 
-// 設定靜態檔案路徑
-app.use(express.static("Front-page"));
+// 設置靜態文件目錄
+server.use(express.static(__dirname + "/contact_me"));
 
-// 連接 MongoDB
-mongoose.connect("mongodb://localhost:27017/commentDB", { useNewUrlParser: true, useUnifiedTopology: true });
+// 建立資料庫
+var commentDB = DB.create(__dirname + "/comment.db");
 
-// 建立資料庫 Schema 和 Model
-const commentSchema = new mongoose.Schema({
-    name: String,
-    message: String,
-});
-const Comment = mongoose.model("Comment", commentSchema);
-
-// 處理表單提交
-app.post("/contact_me", (req, res) => {
-    const newComment = new Comment({
+// 處理 POST 請求（儲存評論資料）
+server.post("/contact_me", (req, res) => {
+    // 從表單接收資料
+    var comment = {
         name: req.body.name,
         message: req.body.message,
-    });
+        createdAt: new Date(), // 加入時間戳
+    };
 
     // 儲存到資料庫
-    newComment.save((err) => {
-        if (!err) {
-            res.send("評論已成功提交！");
-        } else {
-            res.status(500).send("發生錯誤，無法儲存評論！");
-        }
-    });
+    commentDB.insert(comment)
+        .then(() => {
+            console.log("成功儲存評論:", comment);
+            res.redirect("/index.html"); // 導回主頁（或其他頁面）
+        })
+        .catch(err => {
+            console.error("儲存失敗:", err);
+            res.status(500).send("儲存失敗，請稍後再試！");
+        });
+});
+
+server.get("/comments", (req, res) => {
+    commentDB.find({}) // 從資料庫中查詢所有資料
+        .then(comments => {
+            res.json(comments); // 回傳 JSON 格式的資料
+        })
+        .catch(err => {
+            console.error("查詢失敗:", err);
+            res.status(500).send("查詢失敗！");
+        });
 });
 
 // 啟動伺服器
-app.listen(port, () => {
-    console.log(`伺服器已啟動，訪問 http://localhost:${port}`);
+server.listen(80, () => {
+    console.log("伺服器正在執行，監聽 Port 80...");
 });
