@@ -23,7 +23,7 @@ server.post("/contact_me", (req, res) => {
     var comment = {
         name: req.body.name,
         message: req.body.message,
-        //createdAt: new Date(), // 加入時間戳
+        createdAt: new Date(), // 加入時間戳
     };
 
     // 儲存到資料庫
