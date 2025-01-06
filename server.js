@@ -37,5 +37,5 @@ server.post("/contact_me", (req, res) => {
 // 啟動伺服器
 const PORT = process.env.PORT || 8000;
 server.listen(8000, () => {
-    console.log("伺服器正在執行，監聽 Port 5501...");
+    console.log("伺服器正在執行，監聽 Port 8000...");
 });
