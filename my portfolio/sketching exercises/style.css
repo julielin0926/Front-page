@@ -106,6 +106,20 @@ h2 {
     width: 50%;
 }
 
+/* Sticky Top 的自定義樣式 */
+#upload-form {
+    padding: 20px;
+}
+
+#uploadForm{
+    max-width: 300px;
+    max-height: auto;
+    border-radius: 2%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: px;
+}
+
 /* 唯讀區域樣式 */
 #container {
     width: 200px; /* 設定寬度 */
